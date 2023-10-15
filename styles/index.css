@@ -1,0 +1,122 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  width: 80%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 60px;
+  transform: translate(0, -4px);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: gray;
+}
+
+.container-grid {
+  padding: 0 10%;
+}
+
+main {
+  text-align: center;
+  padding: 50px 0;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+  margin: 50px auto;
+  display: block;
+}
+
+h1 {
+  font-size: 7em;
+  margin: 50px 0;
+  font-weight: lighter;
+}
+
+p {
+  margin: 0 auto 45px;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 72px;
+    letter-spacing: -1.6px;
+    margin-top: 200px;
+  }
+
+  p {
+    width: 70%;
+    max-width: 573.5px;
+  }
+
+  header {
+    height: 102px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 36px;
+    line-height: 39.6px;
+    letter-spacing: -0.8px;
+  }
+
+  header {
+    height: 57px;
+  }
+}
+
+@media (min-width: 769px) {
+  h1 {
+    font-size: 90px;
+    letter-spacing: -2px;
+    margin-top: 80px;
+  }
+
+  p {
+    max-width: 573.5px;
+  }
+
+  header {
+    height: 162px;
+  }
+}
